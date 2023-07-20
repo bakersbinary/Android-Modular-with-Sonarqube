@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+  ext {
+    kotlin_version = '1.8.10'
+  }
+  repositories {
+    mavenCentral()
+    google()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:7.4.2'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    classpath "org.jacoco:org.jacoco.core:0.8.8"
+    classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:4.2.1.3168"
+    classpath "com.google.dagger:hilt-android-gradle-plugin:2.44"
+  }
+}
+
+//subprojects {
+//  apply plugin: "org.sonarqube"
+//  sonarqube {
+//    properties {
+//      property "sonar.coverage.jacoco.xmlReportPaths", "$projectDir.parentFile.path/app/build/reports/jacoco/testDebugUnitTestCoverage/testDebugUnitTestCoverage.xml"
+//    }
+//  }
+//}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
