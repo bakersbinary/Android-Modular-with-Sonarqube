@@ -4,7 +4,6 @@ import id.irfanirawansukirman.response.NowPlayingResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.HeaderMap
-import retrofit2.http.Headers
 
 /**
  * Created by irfanirawansukirman on 18/07/23

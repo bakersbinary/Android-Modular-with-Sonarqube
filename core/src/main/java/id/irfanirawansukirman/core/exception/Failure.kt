@@ -8,9 +8,6 @@ sealed class Failure {
   data class RemoteFailure(val message: String) : Failure()
   data class ServerFailure(val message: String) : Failure()
   data class CommonFailure(val message: String) : Failure()
-
-  /** * Extend this class for feature specific failures.*/
-  // abstract class FeatureFailure : Failure()
 }
 
 class RemoteException(

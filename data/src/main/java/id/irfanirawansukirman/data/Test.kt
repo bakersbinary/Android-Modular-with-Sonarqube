@@ -5,8 +5,5 @@ package id.irfanirawansukirman.data
  * Copyright (c) 2023 PT. Intersolusi Teknologi Asia, All Rights Reserved.
  */
 class Test {
-  
-  fun runTest() {
-    // TODO: add some logic here 
-  }
+
 }
