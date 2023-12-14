@@ -1,3 +1,9 @@
 <resources>
-  <string name="app_name">Android Modular with Sonarqube</string>
+    <string name="app_name">Android Modular with Sonarqube</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="bottom.menu.title_home">Beranda</string>
+    <string name="bottom.menu.title_schedule">Kajian</string>
+    <string name="bottom.menu.title_shop">Belanja</string>
+    <string name="bottom.menu.title_info">Info</string>
 </resources>
