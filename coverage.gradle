@@ -7,12 +7,12 @@ tasks.withType(Test) {
 
 task coverageReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
     reports {
-        csv.enabled false
-        xml.enabled true
-        html {
-            enabled true
-            destination file("${buildDir}/coverage-report")
-        }
+//        csv.enabled = false
+//        xml.enabled = true
+//        html {
+//            enabled = true
+//            destination file("${buildDir}/coverage-report")
+//        }
     }
     // Change as needed
     def fileFilter = [
