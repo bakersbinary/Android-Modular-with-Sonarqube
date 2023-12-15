@@ -1,4 +1,4 @@
-package id.irfanirawansukirman.androidmodularwithsonarqube.dashboard.ui.theme
+package id.irfanirawansukirman.androidmodularwithsonarqube.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import id.irfanirawansukirman.androidmodularwithsonarqube.dashboard.graph.DashboardNavigationGraph
-import id.irfanirawansukirman.androidmodularwithsonarqube.dashboard.ui.theme.BaseAppTheme
+import id.irfanirawansukirman.androidmodularwithsonarqube.theme.BaseAppTheme
 
 @AndroidEntryPoint
 class DashboardActivity : ComponentActivity() {
