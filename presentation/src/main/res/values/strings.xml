@@ -6,4 +6,5 @@
     <string name="bottom.menu.title_schedule">Kajian</string>
     <string name="bottom.menu.title_shop">Belanja</string>
     <string name="bottom.menu.title_info">Info</string>
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
 </resources>

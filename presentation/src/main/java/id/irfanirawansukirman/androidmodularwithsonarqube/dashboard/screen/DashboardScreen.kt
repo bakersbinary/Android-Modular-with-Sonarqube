@@ -30,8 +30,8 @@ fun DashboardScreen(navHostController: NavHostController = rememberNavController
   Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
     Scaffold(
       bottomBar = { BuildDashboardBottomNavigation(navHostController = navHostController) }
-    ) {
-      HomeNavigationGraph(navHostController = navHostController)
+    ) { padding ->
+      HomeNavigationGraph(navHostController = navHostController, padding = padding)
     }
   }
 }

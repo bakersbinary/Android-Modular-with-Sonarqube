@@ -1,3 +1,4 @@
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Home
@@ -19,16 +20,16 @@ import id.irfanirawansukirman.androidmodularwithsonarqube.dashboard.screen.Sched
 import id.irfanirawansukirman.androidmodularwithsonarqube.dashboard.screen.ShopScreen
 
 @Composable
-fun HomeNavigationGraph(navHostController: NavHostController) {
+fun HomeNavigationGraph(navHostController: NavHostController, padding: PaddingValues) {
   NavHost(
     navController = navHostController,
     route = Graph.HOME,
     startDestination = DashboardNavigationItemMenu.Home.route
   ) {
-    composable(route = DashboardNavigationItemMenu.Home.route) { HomeScreen() }
-    composable(route = DashboardNavigationItemMenu.Schedule.route) { ScheduleScreen() }
-    composable(route = DashboardNavigationItemMenu.Shop.route) { ShopScreen() }
-    composable(route = DashboardNavigationItemMenu.Info.route) { InfoScreen() }
+    composable(route = DashboardNavigationItemMenu.Home.route) { HomeScreen(padding = padding) }
+    composable(route = DashboardNavigationItemMenu.Schedule.route) { ScheduleScreen(padding = padding) }
+    composable(route = DashboardNavigationItemMenu.Shop.route) { ShopScreen(padding = padding) }
+    composable(route = DashboardNavigationItemMenu.Info.route) { InfoScreen(padding = padding) }
   }
 }
 
